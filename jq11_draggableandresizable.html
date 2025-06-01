@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Draggable and Resizable</title>
+
+        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css" /> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>        
+
+        <style>
+            #draggable {
+                width: 200px;
+                height: 200px;
+                background-color: green;
+                color: white;
+            }
+            #resizable {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                color: white;
+            }
+            div {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Draggable and Resizable</h1>
+
+        <div id="draggable">Drag Me Around!</div>
+        
+        <div id="resizable">Resize Me !</div>
+
+        <script>
+
+            $("#draggable").draggable();
+
+            $("#resizable").resizable();
+
+        </script>
+
+    </body>
+</html>

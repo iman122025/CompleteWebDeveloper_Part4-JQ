@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sortable</title>
+
+        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css" /> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+        <style>
+            body {
+                background: #f7f7f7;
+            }
+
+            ul {
+                padding: 0;
+                width: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .intelligence {
+                background-color: #388cc4;
+            }
+            .happiness {
+                background-color: #e2c242;
+            }
+            .friends {
+                background-color: #27ae60;
+            }
+            .success {
+                background-color: #d87f31;
+            }
+            .family {
+                background-color: #3498db;
+            }
+            .peace {
+                background-color: #16a085;
+            }
+            .health {
+                background-color: #2ecc71;
+            }
+            .power {
+                background-color: #6d3e81;
+            }
+            li {
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin: 6px 0;
+                /* font-weight: bold; */
+                list-style: none;
+                box-shadow: 0 6px 12px #00000033;
+                border: 1px solid #0000001a;
+            }
+            h1 {
+                text-align: center;
+                color: #473939af;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            p {
+                text-align: center;
+                color: #a19797;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                /* line-height: 1.6; */
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1> * Sortable * </h1>
+
+        <h1>Drag and sort the words</h1>
+
+        <p>What is the most important thing in life for you?</p>
+
+        <ul>
+            <li class="intelligence">Intelligence</li>
+            <li class="happiness">Happiness</li>
+            <li class="friends">Friends</li>
+            <li class="success">Success</li>
+            <li class="family">Family</li>
+            <li class="peace">Peace</li>
+            <li class="health">Health</li>
+            <li class="power">Power</li>
+        </ul>
+
+        <script>
+
+            $("ul").sortable();
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accordion</title>
+
+        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css" /> -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+
+        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+        <style>
+            #square {
+                width: 200px;
+                height: 200px;
+                background-color: grey;
+            }
+            body {
+                font-family: Helvetica, Arial, sans-serif;
+                background-color: #f8f9fa;
+                color: #333;
+                padding: 40px;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 28px;
+            }
+            #accordion {
+                width: 60%;
+                margin: auto;
+                box-shadow: 0 4px 12px #5c5a5a1a;
+                border-radius: 8px;
+                background-color: #ffffff;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1> * Accordion * </h1>
+
+        <h1>Intellectual and philosophical books</h1>
+
+        <div id="accordion">
+            <h2>Being and Nothingness</h2>
+            <div>
+                <p>
+                    Being and Nothingness is the major philosophical work of
+                    Jean-Paul Sartre, a central figure in existentialist
+                    thought. In this dense and challenging book, Sartre explores
+                    the nature of human existence through the lens of
+                    phenomenology, influenced by Edmund Husserl and Martin
+                    Heidegger.
+                </p>
+            </div>
+            <h2>A Brief History of Time</h2>
+            <div>
+                <p>
+                    A Brief History of Time is a groundbreaking science book by
+                    physicist Stephen Hawking, aimed at helping non-scientific
+                    readers understand complex topics in cosmology and the
+                    nature of the universe.
+                </p>
+            </div>
+            <h2>Sophie's World</h2>
+            <div>
+                <p>
+                    Sophie's World is a unique novel that serves as both a
+                    mystery story and an introduction to the history of Western
+                    philosophy. Written by Norwegian author Jostein Gaarder, the
+                    book follows the story of Sophie Amundsen, a 14-year-old
+                    girl living in Norway who suddenly starts receiving
+                    mysterious letters
+                </p>
+            </div>
+            <h2>How to Stop Worrying and Start Living</h2>
+            <div>
+                <p>
+                    How to Stop Worrying and Start Living is a classic self-help
+                    book by Dale Carnegie, best known for his earlier bestseller
+                    How to Win Friends and Influence People. This book is
+                    designed to help readers overcome worry, stress, and anxiety
+                    in everyday life.
+                </p>
+            </div>
+        </div>
+
+        <script>
+
+            $("#accordion").accordion();
+
+        </script>
+
+    </body>
+</html>
